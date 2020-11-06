@@ -1,0 +1,22 @@
+{
+  "name": "emaily-app",
+  "version": "1.0.0",
+  "description": "Application to send emailing campaigns with Node-Express and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amelielecoz/Emaily-app.git"
+  },
+  "author": "amelie le coz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amelielecoz/Emaily-app/issues"
+  },
+  "homepage": "https://github.com/amelielecoz/Emaily-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
