@@ -23,7 +23,8 @@ passport.use(new GoogleStrategy({
     clientSecret: keys.googleClientSecret,
     callbackURL: '/auth/google/callback',
     proxy: true
-}, (accesToken, refreshToken, profile, done) => {
+}, 
+(accesToken, refreshToken, profile, done) => {
     User.findOne({ googleId: profile.id})
     .then( existingUser => {
         if (existingUser) {
@@ -36,5 +37,4 @@ passport.use(new GoogleStrategy({
                 });
         }
     })
-    
 }));
