@@ -21,14 +21,5 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 
-app.use('/api/logout', (req, res) => {
-    req.logout();
-    res.send(req.user);
-})
-
-app.get('/api/user', (req, res) => {
-    res.send(req.user)
-})
-
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
