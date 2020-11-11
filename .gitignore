@@ -2,4 +2,4 @@
 
 /config/dev.js
 
-.env.*
+.env.development
