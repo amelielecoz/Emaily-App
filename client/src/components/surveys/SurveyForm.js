@@ -5,7 +5,7 @@ import _ from 'lodash';
 import { Link } from 'react-router-dom';
 import validateEmails from '../../utils/validateEmails';
 import formFields from './formFields';
-
+import './SurveyForm.css';
 
 class SurveyForm extends Component {
 renderFields() {
@@ -19,7 +19,7 @@ renderFields() {
     render() {
         return (
             <div>
-                <h1>Survey Form</h1>
+                <h1 className="center survey-form-title blue-grey-text darken-4-text">Survey Form</h1>
                 <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
                     {this.renderFields()}
                     <Link to="/surveys" className="red btn-flat white-text left">

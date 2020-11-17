@@ -5,8 +5,8 @@ const SurveyField = ({ input, label, meta: {error, touched } }) => {
     
     return (
         <div>
-            <label>{ label }</label>
-            <input {...input} style={{ marginBottom: '5px', }}/>
+            <label style={{ fontSize: '1.5rem'}} >{ label }</label>
+            <input {...input} style={{ marginBottom: '5px', fontSize: '2rem'}} />
             <div className="red-text" style={{ marginBottom: '20px', }}>
                 { touched && error }
             </div>
